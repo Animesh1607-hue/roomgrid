@@ -50,10 +50,18 @@ def main():
     ap.add_argument("--block", type=int, default=5)
     ap.add_argument("--min-valid-frac", type=float, default=0.6)
     ap.add_argument("--max-std", type=float, default=1.0)
+    ap.add_argument("--disp-offset", type=float, default=None,
+                    help="subtract this from every disparity. Corrects a "
+                         "constant matching bias, which shows up as depth "
+                         "error GROWING with distance")
     ap.add_argument("--out", default="captures")
     args = ap.parse_args()
 
     size = (args.width, args.height)
+    if args.disp_offset is None:
+        with np.load(args.calib) as _c:
+            args.disp_offset = float(_c["disp_offset"]) if "disp_offset" in _c.files else 0.0
+    print(f"disparity offset {args.disp_offset:.2f} px")
     cal = load_calib(args.calib, size)
     fx = float(cal["P1"][0, 0])
     b = cal["baseline"]
@@ -88,6 +96,8 @@ def main():
             gL = cv2.cvtColor(rL, cv2.COLOR_BGR2GRAY)
             gR = cv2.cvtColor(rR, cv2.COLOR_BGR2GRAY)
             disp = matcher.compute(gL, gR).astype(np.float32) / 16.0
+            if args.disp_offset:
+                disp = np.where(disp > 0, disp - args.disp_offset, disp)
             valid = disp > 0
             h, w = disp.shape
             c = disp[h // 2 - 20:h // 2 + 20, w // 2 - 20:w // 2 + 20]
