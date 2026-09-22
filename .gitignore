@@ -1,0 +1,9 @@
+*.npz
+*.ply
+*.npy
+*.png
+*.bak
+captures/
+views/
+frames/
+__pycache__/
