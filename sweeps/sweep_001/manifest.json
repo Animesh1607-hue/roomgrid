@@ -1,0 +1,124 @@
+{
+  "calib": "stereo_calib.npz",
+  "width": 640,
+  "height": 480,
+  "num_disp": 96,
+  "block": 5,
+  "disp_offset": 1.15,
+  "row_filter": 3,
+  "views": [
+    {
+      "index": 0,
+      "file": "views/view_000.png",
+      "timestamp": "2026-09-23 10:38:23"
+    },
+    {
+      "index": 1,
+      "file": "views/view_001.png",
+      "timestamp": "2026-09-23 10:38:26"
+    },
+    {
+      "index": 2,
+      "file": "views/view_002.png",
+      "timestamp": "2026-09-23 10:38:31"
+    },
+    {
+      "index": 3,
+      "file": "views/view_003.png",
+      "timestamp": "2026-09-23 10:38:42"
+    },
+    {
+      "index": 4,
+      "file": "views/view_004.png",
+      "timestamp": "2026-09-23 10:38:48"
+    },
+    {
+      "index": 5,
+      "file": "views/view_005.png",
+      "timestamp": "2026-09-23 10:38:59"
+    },
+    {
+      "index": 6,
+      "file": "views/view_006.png",
+      "timestamp": "2026-09-23 10:39:05"
+    },
+    {
+      "index": 7,
+      "file": "views/view_007.png",
+      "timestamp": "2026-09-23 10:39:13"
+    },
+    {
+      "index": 8,
+      "file": "views/view_008.png",
+      "timestamp": "2026-09-23 10:39:20"
+    },
+    {
+      "index": 9,
+      "file": "views/view_009.png",
+      "timestamp": "2026-09-23 10:39:26"
+    },
+    {
+      "index": 10,
+      "file": "views/view_010.png",
+      "timestamp": "2026-09-23 10:39:33"
+    },
+    {
+      "index": 11,
+      "file": "views/view_011.png",
+      "timestamp": "2026-09-23 10:39:39"
+    },
+    {
+      "index": 12,
+      "file": "views/view_012.png",
+      "timestamp": "2026-09-23 10:39:43"
+    }
+  ],
+  "checkpoints": [
+    {
+      "index": 0,
+      "file_L": "checkpoints/chk_000_L.png",
+      "file_R": "checkpoints/chk_000_R.png",
+      "after_view": 0,
+      "plane": null,
+      "note": "rejected: tilt 66 deg > 55",
+      "timestamp": "2026-09-23 10:38:06"
+    },
+    {
+      "index": 1,
+      "file_L": "checkpoints/chk_001_L.png",
+      "file_R": "checkpoints/chk_001_R.png",
+      "after_view": 0,
+      "plane": null,
+      "note": "rejected: plane joins separate surfaces (83 deg apart)",
+      "timestamp": "2026-09-23 10:38:09"
+    },
+    {
+      "index": 2,
+      "file_L": "checkpoints/chk_002_L.png",
+      "file_R": "checkpoints/chk_002_R.png",
+      "after_view": 0,
+      "plane": null,
+      "note": "no plane surrounds the centre",
+      "timestamp": "2026-09-23 10:38:21"
+    },
+    {
+      "index": 3,
+      "file_L": "checkpoints/chk_003_L.png",
+      "file_R": "checkpoints/chk_003_R.png",
+      "after_view": 5,
+      "plane": null,
+      "note": "centre fit rejected (tilt 85 deg > 55); edges: rejected: tilt 88 deg > 55",
+      "timestamp": "2026-09-23 10:38:57"
+    },
+    {
+      "index": 4,
+      "file_L": "checkpoints/chk_004_L.png",
+      "file_R": "checkpoints/chk_004_R.png",
+      "after_view": 11,
+      "plane": null,
+      "note": "centre fit rejected (tilt 88 deg > 55); edges: rejected: tilt 71 deg > 55",
+      "timestamp": "2026-09-23 10:39:36"
+    }
+  ],
+  "created": "2026-09-23 10:39:49"
+}

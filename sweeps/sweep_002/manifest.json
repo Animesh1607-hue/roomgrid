@@ -1,0 +1,228 @@
+{
+  "calib": "stereo_calib.npz",
+  "width": 640,
+  "height": 480,
+  "num_disp": 96,
+  "block": 5,
+  "disp_offset": 1.15,
+  "row_filter": 3,
+  "views": [
+    {
+      "index": 0,
+      "file": "views/view_000.png",
+      "timestamp": "2026-09-23 10:43:47"
+    },
+    {
+      "index": 1,
+      "file": "views/view_001.png",
+      "timestamp": "2026-09-23 10:43:58"
+    },
+    {
+      "index": 2,
+      "file": "views/view_002.png",
+      "timestamp": "2026-09-23 10:44:00"
+    },
+    {
+      "index": 3,
+      "file": "views/view_003.png",
+      "timestamp": "2026-09-23 10:44:04"
+    },
+    {
+      "index": 4,
+      "file": "views/view_004.png",
+      "timestamp": "2026-09-23 10:44:06"
+    },
+    {
+      "index": 5,
+      "file": "views/view_005.png",
+      "timestamp": "2026-09-23 10:44:08"
+    },
+    {
+      "index": 6,
+      "file": "views/view_006.png",
+      "timestamp": "2026-09-23 10:44:11"
+    },
+    {
+      "index": 7,
+      "file": "views/view_007.png",
+      "timestamp": "2026-09-23 10:44:13"
+    },
+    {
+      "index": 8,
+      "file": "views/view_008.png",
+      "timestamp": "2026-09-23 10:44:15"
+    },
+    {
+      "index": 9,
+      "file": "views/view_009.png",
+      "timestamp": "2026-09-23 10:44:17"
+    },
+    {
+      "index": 10,
+      "file": "views/view_010.png",
+      "timestamp": "2026-09-23 10:44:34"
+    },
+    {
+      "index": 11,
+      "file": "views/view_011.png",
+      "timestamp": "2026-09-23 10:44:35"
+    }
+  ],
+  "checkpoints": [
+    {
+      "index": 0,
+      "file_L": "checkpoints/chk_000_L.png",
+      "file_R": "checkpoints/chk_000_R.png",
+      "after_view": 0,
+      "plane": null,
+      "note": "no plane surrounds the centre",
+      "timestamp": "2026-09-23 10:42:39"
+    },
+    {
+      "index": 1,
+      "file_L": "checkpoints/chk_001_L.png",
+      "file_R": "checkpoints/chk_001_R.png",
+      "after_view": 0,
+      "plane": null,
+      "note": "too little steady depth -- hold still, get wall edges in view",
+      "timestamp": "2026-09-23 10:42:48"
+    },
+    {
+      "index": 2,
+      "file_L": "checkpoints/chk_002_L.png",
+      "file_R": "checkpoints/chk_002_R.png",
+      "after_view": 0,
+      "plane": null,
+      "note": "centre fit rejected (tilt 67 deg > 55); edges: no plane surrounds the centre",
+      "timestamp": "2026-09-23 10:42:54"
+    },
+    {
+      "index": 3,
+      "file_L": "checkpoints/chk_003_L.png",
+      "file_R": "checkpoints/chk_003_R.png",
+      "after_view": 0,
+      "plane": null,
+      "note": "no plane surrounds the centre",
+      "timestamp": "2026-09-23 10:42:58"
+    },
+    {
+      "index": 4,
+      "file_L": "checkpoints/chk_004_L.png",
+      "file_R": "checkpoints/chk_004_R.png",
+      "after_view": 0,
+      "plane": null,
+      "note": "rejected: tilt 85 deg > 55",
+      "timestamp": "2026-09-23 10:43:03"
+    },
+    {
+      "index": 5,
+      "file_L": "checkpoints/chk_005_L.png",
+      "file_R": "checkpoints/chk_005_R.png",
+      "after_view": 0,
+      "plane": {
+        "normal": [
+          0.25470423698425293,
+          -0.004408839624375105,
+          -0.9670089483261108
+        ],
+        "d": 542.5977172851562,
+        "axis_mm": 561.1093139648438,
+        "tilt_deg": 14.758321762084961,
+        "method": ""
+      },
+      "note": "",
+      "timestamp": "2026-09-23 10:43:11"
+    },
+    {
+      "index": 6,
+      "file_L": "checkpoints/chk_006_L.png",
+      "file_R": "checkpoints/chk_006_R.png",
+      "after_view": 0,
+      "plane": null,
+      "note": "centre fit rejected (tilt 85 deg > 55); edges: rejected: tilt 87 deg > 55",
+      "timestamp": "2026-09-23 10:43:18"
+    },
+    {
+      "index": 7,
+      "file_L": "checkpoints/chk_007_L.png",
+      "file_R": "checkpoints/chk_007_R.png",
+      "after_view": 0,
+      "plane": null,
+      "note": "rejected: tilt 83 deg > 55",
+      "timestamp": "2026-09-23 10:43:24"
+    },
+    {
+      "index": 8,
+      "file_L": "checkpoints/chk_008_L.png",
+      "file_R": "checkpoints/chk_008_R.png",
+      "after_view": 0,
+      "plane": null,
+      "note": "no plane surrounds the centre",
+      "timestamp": "2026-09-23 10:43:27"
+    },
+    {
+      "index": 9,
+      "file_L": "checkpoints/chk_009_L.png",
+      "file_R": "checkpoints/chk_009_R.png",
+      "after_view": 0,
+      "plane": null,
+      "note": "rejected: tilt 64 deg > 55",
+      "timestamp": "2026-09-23 10:43:32"
+    },
+    {
+      "index": 10,
+      "file_L": "checkpoints/chk_010_L.png",
+      "file_R": "checkpoints/chk_010_R.png",
+      "after_view": 0,
+      "plane": null,
+      "note": "no plane surrounds the centre",
+      "timestamp": "2026-09-23 10:43:35"
+    },
+    {
+      "index": 11,
+      "file_L": "checkpoints/chk_011_L.png",
+      "file_R": "checkpoints/chk_011_R.png",
+      "after_view": 0,
+      "plane": null,
+      "note": "rejected: tilt 76 deg > 55",
+      "timestamp": "2026-09-23 10:43:38"
+    },
+    {
+      "index": 12,
+      "file_L": "checkpoints/chk_012_L.png",
+      "file_R": "checkpoints/chk_012_R.png",
+      "after_view": 0,
+      "plane": null,
+      "note": "rejected: tilt 73 deg > 55",
+      "timestamp": "2026-09-23 10:43:44"
+    },
+    {
+      "index": 13,
+      "file_L": "checkpoints/chk_013_L.png",
+      "file_R": "checkpoints/chk_013_R.png",
+      "after_view": 10,
+      "plane": null,
+      "note": "centre fit rejected (tilt 81 deg > 55); edges: rejected: tilt 86 deg > 55",
+      "timestamp": "2026-09-23 10:44:22"
+    },
+    {
+      "index": 14,
+      "file_L": "checkpoints/chk_014_L.png",
+      "file_R": "checkpoints/chk_014_R.png",
+      "after_view": 10,
+      "plane": null,
+      "note": "rejected: tilt 71 deg > 55",
+      "timestamp": "2026-09-23 10:44:27"
+    },
+    {
+      "index": 15,
+      "file_L": "checkpoints/chk_015_L.png",
+      "file_R": "checkpoints/chk_015_R.png",
+      "after_view": 10,
+      "plane": null,
+      "note": "centre fit rejected (tilt 85 deg > 55); edges: rejected: tilt 76 deg > 55",
+      "timestamp": "2026-09-23 10:44:31"
+    }
+  ],
+  "created": "2026-09-23 10:44:37"
+}
